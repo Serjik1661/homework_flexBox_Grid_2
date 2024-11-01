@@ -1,0 +1,56 @@
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cardUser{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.containerMessage{
+    background-color: brown;
+    width: 300px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+}
+.messageUser{
+    margin: 15px;
+}
+.user{
+    display: flex;
+}
+.userInformation{
+    margin: auto 0;
+}
+.userName{
+    margin: 0;
+    padding: 0;
+}
+.userTime{
+    margin: 0;
+    padding: 0;
+    text-align: end;
+    font-size: 12px;
+    color:rgb(122, 117, 111);
+}
+.userAvatar{
+    margin: auto 15px;
+    width: 50px;
+    height: 50px;
+}
+.cardUser:nth-of-type(2n) .user:nth-of-type(1n){
+    order: 1;
+}
+.cardUser:nth-of-type(2n) .userTime{
+    text-align: start;
+}
+.cardUser:nth-of-type(2n) .userAvatar{
+    order: -1;
+}
+.cardUser:nth-of-type(2n) .containerMessage{
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+}
